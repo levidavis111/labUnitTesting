@@ -28,7 +28,7 @@ class RandomJokeViewController: UIViewController {
     }
     
     private func loadData() {
-        guard let pathToJSONFile = Bundle.main.path(forResource: "joke", ofType: "json") else {fatalError("Could not fund path")}
+        guard let pathToJSONFile = Bundle.main.path(forResource: "joke", ofType: "json") else {fatalError("Could not find path")}
         let url = URL(fileURLWithPath: pathToJSONFile)
         do {
             let data = try Data(contentsOf: url)

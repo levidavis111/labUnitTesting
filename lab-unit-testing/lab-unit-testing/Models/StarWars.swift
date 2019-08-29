@@ -25,6 +25,7 @@ struct StarWars: Codable {
 struct Movie: Codable {
     let title: String
     let release_date: String
+    let opening_crawl: String
     
     
 }
