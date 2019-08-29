@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ihn-Ev-v0Z">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="starWarsCell" textLabel="luh-kN-XPM" detailTextLabel="d7g-Yv-UGG" style="IBUITableViewCellStyleSubtitle" id="cs3-8u-CYW">
@@ -60,6 +60,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="acN-T6-m4E"/>
                     <navigationItem key="navigationItem" id="Nbe-W5-oWY"/>
+                    <connections>
+                        <outlet property="tableView" destination="ihn-Ev-v0Z" id="pT4-k0-cyY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9A-Wk-1nN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pgP-Mm-oEE">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="randomFactCell" textLabel="lSt-qN-tvd" style="IBUITableViewCellStyleDefault" id="MVb-2L-GrJ">
@@ -108,6 +111,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="5Ks-b1-qac"/>
                     <navigationItem key="navigationItem" id="SaB-hO-T7A"/>
+                    <connections>
+                        <outlet property="tableView" destination="pgP-Mm-oEE" id="zU4-KL-Axf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jnY-Ec-mV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,7 +138,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ChZ-v2-n5F">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ChZ-v2-n5F">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -163,11 +169,11 @@
             </objects>
             <point key="canvasLocation" x="2918.840579710145" y="-187.5"/>
         </scene>
-        <!--Item-->
+        <!--Joke-->
         <scene sceneID="rhh-cT-IUE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K3k-jh-X9C" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="SQd-C6-hoq"/>
+                    <tabBarItem key="tabBarItem" title="Joke" id="SQd-C6-hoq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tWf-Wz-AvD">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -193,18 +199,19 @@
                     </tabBar>
                     <connections>
                         <segue destination="K3k-jh-X9C" kind="relationship" relationship="viewControllers" id="Tv8-UK-xkO"/>
-                        <segue destination="EVg-bG-YFe" kind="relationship" relationship="viewControllers" id="9cZ-eT-Bh6"/>
-                        <segue destination="seL-Um-oRg" kind="relationship" relationship="viewControllers" id="egx-mS-04T"/>
+                        <segue destination="avK-R5-qjS" kind="relationship" relationship="viewControllers" id="jkJ-d1-cBK"/>
+                        <segue destination="mEK-E2-E0t" kind="relationship" relationship="viewControllers" id="Ij0-m4-qyf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgq-QR-emv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1098.5507246376812" y="-188.16964285714286"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Trivia-->
         <scene sceneID="9kW-FI-KPY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mEK-E2-E0t" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trivia" id="G6f-YI-Uhx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OdX-FR-6gc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -219,10 +226,11 @@
             </objects>
             <point key="canvasLocation" x="2009" y="512"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Star Wars-->
         <scene sceneID="GU7-Fk-O4S">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="avK-R5-qjS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Star Wars" id="dfC-KC-4t7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="olg-I0-z4w">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -238,8 +246,4 @@
             <point key="canvasLocation" x="2009" y="-881"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="KGZ-e5-1YF"/>
-        <segue reference="9cZ-eT-Bh6"/>
-    </inferredMetricsTieBreakers>
 </document>
