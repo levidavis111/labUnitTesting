@@ -32,12 +32,24 @@ class lab_unit_testingTests: XCTestCase {
     }
     
     func testLoadJokes() {
-        let joke = Joke()
+        let data = getJokeDataFromJSON()
+        let joke = Joke.getJokes(from: data)
         XCTAssertTrue(joke != nil, "There is no Joke here")
     }
     
     func testJokesHasTenElements() {
-        
+        let data = getJokeDataFromJSON()
+        let joke = Joke.getJokes(from: data)
     }
 
+    private func getJokeDataFromJSON() -> Data {
+        guard let pathToData = Bundle.main.path(forResource: "joke", ofType: "json") else {fatalError("Could not find path")}
+        let url = URL(fileURLWithPath: pathToData)
+        do {
+            let data = try Data(contentsOf: url)
+            return data
+        } catch let jsonError {
+            fatalError("Error: \(jsonError)")
+        }
+    }
 }

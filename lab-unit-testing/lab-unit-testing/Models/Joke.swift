@@ -12,7 +12,7 @@ struct Joke: Codable {
     let setup: String
     let punchline: String
     
-    static func loadData(from data: Data) throws -> [Joke] {
+    static func getJokes(from data: Data) -> [Joke] {
         
         do {
             let results = try JSONDecoder().decode([Joke].self, from: data)
