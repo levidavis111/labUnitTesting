@@ -224,6 +224,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AyK-I7-Gde"/>
                     </view>
+                    <connections>
+                        <outlet property="punchlineLabel" destination="JiK-r0-pP3" id="bVF-pe-mtI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lje-FY-3bz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

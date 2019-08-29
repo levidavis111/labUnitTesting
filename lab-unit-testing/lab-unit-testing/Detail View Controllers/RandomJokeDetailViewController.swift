@@ -9,22 +9,20 @@
 import UIKit
 
 class RandomJokeDetailViewController: UIViewController {
+    
+    var joke: Joke!
 
+    @IBOutlet weak var punchlineLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupView()
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupView() {
+    punchlineLabel.text = joke.punchline
     }
-    */
 
 }

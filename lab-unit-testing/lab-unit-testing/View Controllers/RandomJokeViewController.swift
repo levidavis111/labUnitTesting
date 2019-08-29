@@ -18,6 +18,14 @@ class RandomJokeViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is RandomJokeDetailViewController {
+            guard let indexPath = tableView.indexPathForSelectedRow,
+                let jokeVC = segue.destination as? RandomJokeDetailViewController else {return}
+            let oneJoke = joke[indexPath.row]
+            jokeVC.joke = oneJoke
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
