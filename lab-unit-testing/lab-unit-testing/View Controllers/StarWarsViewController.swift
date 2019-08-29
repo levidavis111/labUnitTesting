@@ -18,6 +18,14 @@ class StarWarsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is StarWarsDetailViewController {
+            guard let indexPath = tableView.indexPathForSelectedRow,
+                let starWarsVC = segue.destination as? StarWarsDetailViewController else {return}
+            let oneStarWar = starWars[indexPath.row]
+            starWarsVC.starWar = oneStarWar
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -45,6 +45,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vqC-yH-qXn" kind="show" id="ogR-xd-inc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -75,9 +78,29 @@
                     <view key="view" contentMode="scaleToFill" id="FHg-pT-hkh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dHN-4j-HMc">
+                                <rect key="frame" x="87" y="386.5" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="K6B-61-dfR"/>
+                                    <constraint firstAttribute="width" constant="240" id="L93-2O-efs"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dHN-4j-HMc" firstAttribute="centerY" secondItem="Btu-9o-Wij" secondAttribute="centerY" id="3Xj-LD-lmJ"/>
+                            <constraint firstItem="dHN-4j-HMc" firstAttribute="centerX" secondItem="Btu-9o-Wij" secondAttribute="centerX" id="y0A-OZ-J9n"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Btu-9o-Wij"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="dHN-4j-HMc" id="1iq-kO-hm3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXP-Kg-yby" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
