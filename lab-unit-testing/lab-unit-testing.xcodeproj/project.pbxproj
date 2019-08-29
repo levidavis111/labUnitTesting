@@ -24,6 +24,9 @@
 		FC3B30762318628D00FA66F0 /* RandomFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B3074231861E600FA66F0 /* RandomFacts.swift */; };
 		FC3B3078231865EB00FA66F0 /* StarWarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B3077231865EB00FA66F0 /* StarWarsViewController.swift */; };
 		FC3B307A231865FD00FA66F0 /* RandomFactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B3079231865FD00FA66F0 /* RandomFactViewController.swift */; };
+		FC3B307C2318757100FA66F0 /* RandomJokeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B307B2318757100FA66F0 /* RandomJokeDetailViewController.swift */; };
+		FC3B307E2318758300FA66F0 /* StarWarsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B307D2318758300FA66F0 /* StarWarsDetailViewController.swift */; };
+		FC3B30802318759700FA66F0 /* RandomFactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B307F2318759700FA66F0 /* RandomFactDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		FC3B3074231861E600FA66F0 /* RandomFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFacts.swift; sourceTree = "<group>"; };
 		FC3B3077231865EB00FA66F0 /* StarWarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsViewController.swift; sourceTree = "<group>"; };
 		FC3B3079231865FD00FA66F0 /* RandomFactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFactViewController.swift; sourceTree = "<group>"; };
+		FC3B307B2318757100FA66F0 /* RandomJokeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeDetailViewController.swift; sourceTree = "<group>"; };
+		FC3B307D2318758300FA66F0 /* StarWarsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsDetailViewController.swift; sourceTree = "<group>"; };
+		FC3B307F2318759700FA66F0 /* RandomFactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFactDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 				FC3B30682318507900FA66F0 /* Models */,
 				FC3B30652318504E00FA66F0 /* Supporting Files */,
 				FC3B30642318500900FA66F0 /* View Controllers */,
+				FC3B3081231875A000FA66F0 /* Detail View Controllers */,
 				FC3B304623184F2900FA66F0 /* Main.storyboard */,
 				FC3B304923184F2B00FA66F0 /* Assets.xcassets */,
 				FC3B304E23184F2B00FA66F0 /* Info.plist */,
@@ -153,6 +160,16 @@
 				FC3B3072231861D200FA66F0 /* randomfacts.json */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		FC3B3081231875A000FA66F0 /* Detail View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC3B307B2318757100FA66F0 /* RandomJokeDetailViewController.swift */,
+				FC3B307D2318758300FA66F0 /* StarWarsDetailViewController.swift */,
+				FC3B307F2318759700FA66F0 /* RandomFactDetailViewController.swift */,
+			);
+			path = "Detail View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +279,10 @@
 				FC3B307023185BE800FA66F0 /* StarWars.swift in Sources */,
 				FC3B3075231861E600FA66F0 /* RandomFacts.swift in Sources */,
 				FC3B306323184FFD00FA66F0 /* RandomJokeViewController.swift in Sources */,
+				FC3B307C2318757100FA66F0 /* RandomJokeDetailViewController.swift in Sources */,
+				FC3B30802318759700FA66F0 /* RandomFactDetailViewController.swift in Sources */,
 				FC3B3078231865EB00FA66F0 /* StarWarsViewController.swift in Sources */,
+				FC3B307E2318758300FA66F0 /* StarWarsDetailViewController.swift in Sources */,
 				FC3B307A231865FD00FA66F0 /* RandomFactViewController.swift in Sources */,
 				FC3B304323184F2900FA66F0 /* AppDelegate.swift in Sources */,
 				FC3B30672318506700FA66F0 /* Joke.swift in Sources */,
