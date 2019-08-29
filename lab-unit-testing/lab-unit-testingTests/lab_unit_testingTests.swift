@@ -48,9 +48,25 @@ class lab_unit_testingTests: XCTestCase {
         let joke = Joke.getJokes(from: data)
         XCTAssertTrue(joke[0].punchline == String(joke[0].punchline), "This is not a string")
     }
+    
+    func testStarWarsHasSevenElements() {
+        let data = getStarWarsDataFromJSON()
+        let starWars = StarWars()
+    }
 
     private func getJokeDataFromJSON() -> Data {
         guard let pathToData = Bundle.main.path(forResource: "joke", ofType: "json") else {fatalError("Could not find path")}
+        let url = URL(fileURLWithPath: pathToData)
+        do {
+            let data = try Data(contentsOf: url)
+            return data
+        } catch let jsonError {
+            fatalError("Error: \(jsonError)")
+        }
+    }
+    
+    private func getStarWarsDataFromJSON() -> Data {
+        guard let pathToData = Bundle.main.path(forResource: "starwars", ofType: "json") else {fatalError("Could not find path")}
         let url = URL(fileURLWithPath: pathToData)
         do {
             let data = try Data(contentsOf: url)
