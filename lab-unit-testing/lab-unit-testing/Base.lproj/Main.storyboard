@@ -80,21 +80,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dHN-4j-HMc">
-                                <rect key="frame" x="87" y="386.5" width="240" height="128"/>
+                                <rect key="frame" x="29.5" y="179.5" width="355" height="272"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="K6B-61-dfR"/>
-                                    <constraint firstAttribute="width" constant="240" id="L93-2O-efs"/>
+                                    <constraint firstAttribute="height" constant="272" id="47u-dM-acm"/>
+                                    <constraint firstAttribute="width" constant="355" id="CyM-xr-ExS"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dHN-4j-HMc" firstAttribute="centerY" secondItem="Btu-9o-Wij" secondAttribute="centerY" id="3Xj-LD-lmJ"/>
-                            <constraint firstItem="dHN-4j-HMc" firstAttribute="centerX" secondItem="Btu-9o-Wij" secondAttribute="centerX" id="y0A-OZ-J9n"/>
+                            <constraint firstItem="dHN-4j-HMc" firstAttribute="centerY" secondItem="Btu-9o-Wij" secondAttribute="centerY" multiplier="0.7" id="Hbq-uz-tcU"/>
+                            <constraint firstItem="dHN-4j-HMc" firstAttribute="centerX" secondItem="Btu-9o-Wij" secondAttribute="centerX" id="W9u-ZX-p4B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Btu-9o-Wij"/>
                     </view>
@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXP-Kg-yby" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3828" y="-881"/>
+            <point key="canvasLocation" x="3827.5362318840585" y="-881.25"/>
         </scene>
         <!--RandomFactViewController-->
         <scene sceneID="iS1-J4-sCB">

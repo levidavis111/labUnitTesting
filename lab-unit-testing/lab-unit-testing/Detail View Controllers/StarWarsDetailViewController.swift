@@ -23,6 +23,8 @@ class StarWarsDetailViewController: UIViewController {
 
     func setupView() {
         textView.text = starWar.opening_crawl
+        textView.textColor = .yellow
+        textView.backgroundColor = .black
     }
 
 }
