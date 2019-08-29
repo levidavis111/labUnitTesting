@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct Results: Codable {
+struct ArrayOfFacts: Codable {
     let results: [Fact]
     
     static func getFacts(from data: Data) -> [Fact] {
         do {
-            let results = try JSONDecoder().decode(Results.self, from: data)
+            let results = try JSONDecoder().decode(ArrayOfFacts.self, from: data)
             return results.results
         } catch let decodeError {
             fatalError("Error: \(decodeError)")

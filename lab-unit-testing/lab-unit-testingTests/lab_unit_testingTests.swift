@@ -54,6 +54,12 @@ class lab_unit_testingTests: XCTestCase {
         let starWars = StarWars.getMovies(from: data)
         XCTAssertTrue(starWars.count == 7, "This does not have seven; it has \(starWars.count)")
     }
+    
+    func testRandomFactHasTenRandomFacts() {
+        let data = getRandomFactDataFromJSON()
+        let arrayOfFacts = ArrayOfFacts.getFacts(from: data)
+        XCTAssertTrue(arrayOfFacts.count == 10, "This does not have 10 facts; it has \(arrayOfFacts.count)")
+    }
 
     private func getJokeDataFromJSON() -> Data {
         guard let pathToData = Bundle.main.path(forResource: "joke", ofType: "json") else {fatalError("Could not find path")}
@@ -68,6 +74,17 @@ class lab_unit_testingTests: XCTestCase {
     
     private func getStarWarsDataFromJSON() -> Data {
         guard let pathToData = Bundle.main.path(forResource: "starwars", ofType: "json") else {fatalError("Could not find path")}
+        let url = URL(fileURLWithPath: pathToData)
+        do {
+            let data = try Data(contentsOf: url)
+            return data
+        } catch let jsonError {
+            fatalError("Error: \(jsonError)")
+        }
+    }
+    
+    private func getRandomFactDataFromJSON() -> Data {
+        guard let pathToData = Bundle.main.path(forResource: "randomfacts", ofType: "json") else {fatalError("Could not find path")}
         let url = URL(fileURLWithPath: pathToData)
         do {
             let data = try Data(contentsOf: url)
