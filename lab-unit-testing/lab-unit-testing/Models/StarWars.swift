@@ -11,11 +11,6 @@ import Foundation
 struct StarWars: Codable {
     let results: [Movie]
     
-}
-
-struct Movie: Codable {
-    let title: String
-    
     static func getMovies(from data: Data) -> [Movie] {
         do {
             let results = try JSONDecoder().decode(StarWars.self, from: data)
@@ -24,4 +19,12 @@ struct Movie: Codable {
             fatalError("Error: \(decodeError)")
         }
     }
+    
+}
+
+struct Movie: Codable {
+    let title: String
+    let release_date: String
+    
+    
 }

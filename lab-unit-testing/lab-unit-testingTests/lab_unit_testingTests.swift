@@ -51,7 +51,8 @@ class lab_unit_testingTests: XCTestCase {
     
     func testStarWarsHasSevenElements() {
         let data = getStarWarsDataFromJSON()
-        let starWars = StarWars()
+        let starWars = StarWars.getMovies(from: data)
+        XCTAssertTrue(starWars.count == 7, "This does not have seven; it has \(starWars.count)")
     }
 
     private func getJokeDataFromJSON() -> Data {
