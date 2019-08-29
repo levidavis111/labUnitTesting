@@ -23,4 +23,12 @@ struct ArrayOfFacts: Codable {
 
 struct Fact: Codable {
     let question: String
+    let correct_answer: String
+    let incorrect_answers: [String]
+    
+    func allAnswerArray() -> [String] {
+        var answerArray = self.incorrect_answers
+        answerArray.insert(self.correct_answer, at: Int.random(in: 0...self.incorrect_answers.count))
+        return answerArray
+    }
 }

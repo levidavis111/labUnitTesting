@@ -18,6 +18,15 @@ class RandomFactViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is RandomFactDetailViewController {
+            guard let indexPath = tableView.indexPathForSelectedRow,
+                let factVC = segue.destination as? RandomFactDetailViewController else {return}
+            let oneFact = randomFacts[indexPath.row]
+            factVC.fact = oneFact
+            factVC.answerArray = oneFact.allAnswerArray()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
