@@ -19,6 +19,9 @@
 		FC3B306E23185B5B00FA66F0 /* starwars.json in Resources */ = {isa = PBXBuildFile; fileRef = FC3B306D23185B5B00FA66F0 /* starwars.json */; };
 		FC3B307023185BE800FA66F0 /* StarWars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B306F23185BE800FA66F0 /* StarWars.swift */; };
 		FC3B30712318606300FA66F0 /* StarWars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B306F23185BE800FA66F0 /* StarWars.swift */; };
+		FC3B3073231861D200FA66F0 /* randomfacts.json in Resources */ = {isa = PBXBuildFile; fileRef = FC3B3072231861D200FA66F0 /* randomfacts.json */; };
+		FC3B3075231861E600FA66F0 /* RandomFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B3074231861E600FA66F0 /* RandomFacts.swift */; };
+		FC3B30762318628D00FA66F0 /* RandomFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B3074231861E600FA66F0 /* RandomFacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,8 @@
 		FC3B30692318513300FA66F0 /* joke.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = joke.json; sourceTree = "<group>"; };
 		FC3B306D23185B5B00FA66F0 /* starwars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = starwars.json; sourceTree = "<group>"; };
 		FC3B306F23185BE800FA66F0 /* StarWars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWars.swift; sourceTree = "<group>"; };
+		FC3B3072231861D200FA66F0 /* randomfacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = randomfacts.json; path = ../../../randomfacts.json; sourceTree = "<group>"; };
+		FC3B3074231861E600FA66F0 /* RandomFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,7 @@
 			children = (
 				FC3B30662318506700FA66F0 /* Joke.swift */,
 				FC3B306F23185BE800FA66F0 /* StarWars.swift */,
+				FC3B3074231861E600FA66F0 /* RandomFacts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,6 +144,7 @@
 			children = (
 				FC3B30692318513300FA66F0 /* joke.json */,
 				FC3B306D23185B5B00FA66F0 /* starwars.json */,
+				FC3B3072231861D200FA66F0 /* randomfacts.json */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -223,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3B3073231861D200FA66F0 /* randomfacts.json in Resources */,
 				FC3B304D23184F2B00FA66F0 /* LaunchScreen.storyboard in Resources */,
 				FC3B306E23185B5B00FA66F0 /* starwars.json in Resources */,
 				FC3B304A23184F2B00FA66F0 /* Assets.xcassets in Resources */,
@@ -246,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3B307023185BE800FA66F0 /* StarWars.swift in Sources */,
+				FC3B3075231861E600FA66F0 /* RandomFacts.swift in Sources */,
 				FC3B306323184FFD00FA66F0 /* RandomJokeViewController.swift in Sources */,
 				FC3B304323184F2900FA66F0 /* AppDelegate.swift in Sources */,
 				FC3B30672318506700FA66F0 /* Joke.swift in Sources */,
@@ -258,6 +267,7 @@
 			files = (
 				FC3B306C2318518F00FA66F0 /* Joke.swift in Sources */,
 				FC3B30712318606300FA66F0 /* StarWars.swift in Sources */,
+				FC3B30762318628D00FA66F0 /* RandomFacts.swift in Sources */,
 				FC3B305823184F2B00FA66F0 /* lab_unit_testingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
