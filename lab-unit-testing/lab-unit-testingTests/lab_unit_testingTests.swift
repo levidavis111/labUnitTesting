@@ -40,6 +40,13 @@ class lab_unit_testingTests: XCTestCase {
     func testJokesHasTenElements() {
         let data = getJokeDataFromJSON()
         let joke = Joke.getJokes(from: data)
+        XCTAssertTrue(joke.count == 10, "There are not 10 elements; there are \(joke.count)")
+    }
+    
+    func testPunchlineIsString() {
+        let data = getJokeDataFromJSON()
+        let joke = Joke.getJokes(from: data)
+        XCTAssertTrue(joke[0].punchline == String(joke[0].punchline), "This is not a string")
     }
 
     private func getJokeDataFromJSON() -> Data {
