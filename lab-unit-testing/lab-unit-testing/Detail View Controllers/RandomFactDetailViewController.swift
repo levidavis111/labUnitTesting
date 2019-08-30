@@ -46,8 +46,10 @@ extension RandomFactDetailViewController: UITableViewDelegate, UITableViewDataSo
         
         if answerArray[indexPath.row] == fact.correct_answer {
          selectedCell?.backgroundColor = .green
+             tableView.isUserInteractionEnabled = false
         } else {
           selectedCell?.backgroundColor = .red
+             tableView.isUserInteractionEnabled = false
         }
     }
 }
