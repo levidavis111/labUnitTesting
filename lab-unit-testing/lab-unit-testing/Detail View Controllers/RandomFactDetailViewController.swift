@@ -13,19 +13,16 @@ class RandomFactDetailViewController: UIViewController {
     var fact: Fact!
     var answerArray: [String]!
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var triviaTableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
+        triviaTableView.delegate = self
+        triviaTableView.dataSource = self
         
         // Do any additional setup after loading the view.
     }
-    
-   
-
 }
 
 extension RandomFactDetailViewController: UITableViewDelegate, UITableViewDataSource {
@@ -44,12 +41,13 @@ extension RandomFactDetailViewController: UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let selectedCell = tableView.cellForRow(at: indexPath)
+        
         if answerArray[indexPath.row] == fact.correct_answer {
-            self.view.backgroundColor = .green
+         selectedCell?.backgroundColor = .green
         } else {
-            self.view.backgroundColor = .red
+          selectedCell?.backgroundColor = .red
         }
     }
-    
-    
 }
